@@ -57,7 +57,7 @@ is rendered as:
 
 Well, If you want to sing out, **sign out**\
 And if you want to be free, *be free*\
-Cause there's a ***million things to be***\
+Cause there's a ***million things to be***
 
 ## Images ##
 - Alt text is not allowed
