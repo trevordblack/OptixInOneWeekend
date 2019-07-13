@@ -1,6 +1,6 @@
 # An Introduction to GPU Ray Tracing with OptiX #
 
-- [ ] Picture of End of Project 2
+![](media/readme_header.png)
 
 ## What is this? ##
 
