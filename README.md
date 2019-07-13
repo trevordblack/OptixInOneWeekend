@@ -39,16 +39,21 @@ So, in the near term, Project 1 and Cuda is of lower priority.
 LICENSE
 - The License for this repo is Apache License 2.0
 - Basically, you can do whatever you like, provided you maintain existing licenses **and** specify modifications.
+
 README.md
 - You're reading it.
+
 media/
 - Contains the media for the project, photos
+
 publishing/
 - This is the author's internal documentation for the book
 - It is probably zero value to the reader, but included for transparency
+
 source/
 - Contains all of the source
 - The organization for this directory will change as the project matures
+
 text/
 - Contains the text of the book
 
@@ -59,8 +64,8 @@ See publishing/book.md
 
 ## Acknowledgements ##
 
-Peter Shirley
-Ingo Wald
+Peter Shirley\
+Ingo Wald\
 João Vítor Silva
 
 ## Contributing ##
