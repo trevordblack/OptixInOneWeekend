@@ -2,11 +2,13 @@
 
 ### Immediately ###
 - [ ] MVP Readme.md
+  - [x] Header Picture
+  - [ ] A sentence in each (there abouts)
 - [ ] Write 3_2 code
+- [ ] write 3_3 code
 
 ### Highest Priority ###
 - [ ] Write Project 3 code
-  - [ ] Part 3
   - [ ] Part 4
   - [ ] Part 5
   - [ ] Part 6
