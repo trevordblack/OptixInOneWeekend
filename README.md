@@ -14,6 +14,8 @@
 
 ## Table of Contents ##
 
+## Acknowledgements ##
+
 ## Contributing ##
 
 ## Work Left to Complete ##

@@ -8,7 +8,7 @@ Style guide is a strict subset of Github Flavored Markdown (GFM)
 - All headings have exactly 1 space between text and unescaped `#`s
 
 ```
-# Heading ###
+# Heading #
 
 ## Smaller Heading ##
 

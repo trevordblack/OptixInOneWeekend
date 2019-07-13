@@ -13,12 +13,7 @@
 - Repo folder organization
 - Contributing
 - Work left to finish
-
-### Fluffy ###
 - Acknowledgements
-- Who the book is for
-  - Expected experience
-- Tools used in this book
 
 ### Project 1: Cuda ###
 - Cuda Hello World
