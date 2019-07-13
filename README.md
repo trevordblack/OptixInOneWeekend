@@ -5,7 +5,7 @@
 ## What is this? ##
 
 This is *An Introduction to GPU Ray Tracing with Optix*.\
-An Introductory text to learning the Nvidia OptiX Ray tracing SDK.\
+An Introductory text to learning the Nvidia OptiX Ray tracing SDK.
 
 Within the body of the SDK there are a large number of holistic programs that encapsulate an entire ray tracing project. However, at time of writing, there does not exist an adequate introduction publically.\
 This text is an attempt to remedy that.\
@@ -30,7 +30,7 @@ The following tools will be used:
 
 It doesn't!
 
-At present plan, Project 1 is a Cuda introduction. I explicitly do *not* expect cuda experience for the user. However, there exist adequate cuda introductions on the web already.
+At present plan, Project 1 is a Cuda introduction. I explicitly do *not* expect cuda experience for the user. However, there exists adequate cuda introductions on the web already.
 
 So, in the near term, Project 1 and Cuda is of lower priority.
 
@@ -48,7 +48,7 @@ media/
 
 publishing/
 - This is the author's internal documentation for the book
-- It is probably zero value to the reader, but included for transparency
+- It is of probably zero value to the reader, but included for transparency
 
 source/
 - Contains all of the source

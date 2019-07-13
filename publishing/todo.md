@@ -1,9 +1,9 @@
 # TODO #
 
 ### Immediately ###
-- [ ] MVP Readme.md
+- [x] MVP Readme.md
   - [x] Header Picture
-  - [ ] A sentence in each (there abouts)
+  - [x] A sentence in each (there abouts)
 - [ ] Write 3_2 code
 - [ ] write 3_3 code
 
