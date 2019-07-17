@@ -1,11 +1,11 @@
 # TODO #
 
 ### Immediately ###
-- [x] MVP Readme.md
-  - [x] Header Picture
-  - [x] A sentence in each (there abouts)
-- [ ] Write 3_2 code
+- [x] Write 3_2 code
 - [ ] write 3_3 code
+  - [ ] 3_3_1
+  - [ ] 3_3_2
+  - [ ] 3_3_3
 
 ### Highest Priority ###
 - [ ] Write Project 3 code
@@ -13,12 +13,15 @@
   - [ ] Part 5
   - [ ] Part 6
 - [ ] Start writing Project 2 text
-  - Code will need to be rewritten once writing starts, so just get at least mostly consistent
+  - Code will need to be rewritten once writing starts, so just get at least mostly consistent*
+- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
 
 ### Medium Priority ###
 - [ ] Start writing Project 3 text
 - [ ] Pull together Project 1 code
 - [ ] Write Project 1 text
+- [ ] fix "../[core|?]" in projects
+  - confirm why INCLUDE_DIRECTORIES( core ) is present
 
 ### Low Priority ###
 - [ ] Project 4 code
