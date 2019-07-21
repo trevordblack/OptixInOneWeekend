@@ -1,5 +1,6 @@
 ## Book 2 ##
 ### Project 5: Putting it all together? ###
+- real3 and Real<N>
 - Motion Blur
 - Adding a bunch of Materials
 

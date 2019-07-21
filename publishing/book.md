@@ -40,14 +40,16 @@
   - Section 2: Refactor code to object-oriented programming
 - Part 2: Antialiasing
 - Part 3: Creating our Scene classes
-  - Section [1|2]: Creating an ioMaterial class
-    - Lambertian Material
-    - Normal Material
-  - Section [1|2]: Creating geo classes
-    - ioGeometryGroup
-    - ioGeometryInstance
-    - ioGeometry
-  - Section 3: the Scene (ioScene) class
+  - Section 1: Creating our wrapper classes
+    - Creating ioGeo classes
+      - ioGeometryGroup
+      - ioGeometryInstance
+      - ioGeometry
+    - Creating ioMaterial class
+      - Normal Material
+      - Lambertian Material
+    - Creating Sphere class
+  - Section 2: the Scene (ioScene) class
 - Part 4: Adding more Materials
   - Section 1: Metal
   - Section 2: Dielectric (Thin Glass?)
