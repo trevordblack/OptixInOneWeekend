@@ -7,7 +7,8 @@
     - [x] create Wrapper classes
     - [x] create sphere class
     - [x] create normal material class
-    - [ ] rewrite core/introOptix.cpp & core/introOptix.h
+    - [x] rewrite core/introOptix.cpp & core/introOptix.h
+    - [ ] Debug
   - [ ] 3_3_2
 
 ### Highest Priority ###
