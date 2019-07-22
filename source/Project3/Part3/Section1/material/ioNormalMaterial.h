@@ -17,8 +17,8 @@ public:
         optix::Program hit = context->createProgramFromPTXString(
             normal_material_ptx_c, "closestHit"
         );
-        mat->setClosestHitProgram(0, hit);
+        m_mat->setClosestHitProgram(0, hit);
     }
-}
+};
 
 #endif //!IO_NORMAL_MATERIAL_H

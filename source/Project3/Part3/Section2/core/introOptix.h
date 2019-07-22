@@ -4,9 +4,7 @@
 #include <optix.h>
 #include <optixu/optixpp.h>
 
-#include "geometry/ioGeometry.h"
-#include "geometry/ioGeometryInstance.h"
-#include "geometry/ioGeometryGroup.h"
+#include "core/ioScene.h"
 
 class IntroOptix
 {
@@ -35,10 +33,7 @@ private:
     optix::Program m_missProgram;
 
     // Scene Objects
-    ioGeometry* m_pGeometry;
-    ioMaterial* m_pMaterial; 
-    ioGeometryInstance m_gi;
-    ioGeometryGroup m_gg;
+    ioScene m_scene;
 
     void initContext();
     void initOutputBuffer();

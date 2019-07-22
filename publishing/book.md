@@ -47,13 +47,14 @@
       - ioGeometry
     - Creating ioMaterial class
       - Normal Material
-      - Lambertian Material
     - Creating Sphere class
   - Section 2: the Scene (ioScene) class
+    - ioScene
 - Part 4: Adding more Materials
-  - Section 1: Metal
-  - Section 2: Dielectric (Thin Glass?)
-  - Section 3: Maybe a 3rd other material makes sense
+  - Section 1: Lambertaian
+  - Section 2: Metal
+  - Section 3: Dielectric (Thin Glass?)
+  - Section 4: Maybe a 4th other material makes sense
 - Part 5: Positionable Camera
 - Part 6: Making a Scene
 

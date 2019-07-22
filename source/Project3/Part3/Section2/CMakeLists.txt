@@ -17,7 +17,7 @@ cuda_compile_and_embed(
   normal_material_ptx_c material/normalMaterial.cu
 )
 
-add_executable(IntroOptix_3_3_1
+add_executable(IntroOptix_3_3_2
   core/introOptix.h
   core/introOptix.cpp
   main.cpp
@@ -28,7 +28,7 @@ add_executable(IntroOptix_3_3_1
   ${normal_material_ptx_c}
 )
 
-target_link_libraries(IntroOptix_3_3_1
+target_link_libraries(IntroOptix_3_3_2
   ${optix_LIBRARY}
 )
 

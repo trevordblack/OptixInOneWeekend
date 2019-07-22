@@ -11,6 +11,11 @@ public:
 
     virtual void init(optix::Context& context) = 0;
 
+    virtual void destroy()
+    {
+        m_mat->destroy();
+    }
+
     optix::Material get()
     {
         return m_mat;
@@ -18,6 +23,6 @@ public:
 
 protected:
     optix::Material m_mat;
-}
+};
 
 #endif //!IO_MATERIAL_H

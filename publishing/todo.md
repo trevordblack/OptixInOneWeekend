@@ -2,14 +2,14 @@
 
 ### Immediately ###
 - [x] Write 3_2 code
-- [ ] write 3_3 code
-  - [ ] 3_3_1
+- [x] write 3_3 code
+  - [x] 3_3_1
     - [x] create Wrapper classes
     - [x] create sphere class
     - [x] create normal material class
     - [x] rewrite core/introOptix.cpp & core/introOptix.h
-    - [ ] Debug
-  - [ ] 3_3_2
+    - [x] Debug
+  - [x] 3_3_2
 
 ### Highest Priority ###
 - [ ] Write Project 3 code
@@ -36,6 +36,7 @@
 - [ ] fix *include "../[core|?]"* in projects
   - confirm why INCLUDE_DIRECTORIES( core ) is present
 - [ ] Remove add_executable - core/introOptix.h in CMakeLists.txt
+- [ ] Move *materials/* to *material/*
 - [ ] Write Project 4 text
 - [ ] Figure out if there is a way to try-catch optix::object exceptions 
 
