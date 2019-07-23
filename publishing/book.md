@@ -54,8 +54,12 @@
   - Section 1: Lambertian
   - Section 2: Metal
   - Section 3: Dielectric (Thin Glass?)
-- Part 5: Positionable Camera
-- Part 6: Making a Scene
+- Part 5: Making a Scene
+  - Section 1 Positionable Camera
+    - Perspective
+    - Orthographic?
+    - Panoramic?
+  - Section 2: Making a Scene
 
 ### Project 4: Cornell Box ###
 - Adding Quads
