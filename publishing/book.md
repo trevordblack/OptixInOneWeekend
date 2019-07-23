@@ -51,10 +51,9 @@
   - Section 2: the Scene (ioScene) class
     - ioScene
 - Part 4: Adding more Materials
-  - Section 1: Lambertaian
+  - Section 1: Lambertian
   - Section 2: Metal
   - Section 3: Dielectric (Thin Glass?)
-  - Section 4: Maybe a 4th other material makes sense
 - Part 5: Positionable Camera
 - Part 6: Making a Scene
 

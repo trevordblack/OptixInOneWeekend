@@ -1,28 +1,26 @@
 # TODO #
 
 ### Immediately ###
-- [x] Write 3_2 code
-- [x] write 3_3 code
-  - [x] 3_3_1
-    - [x] create Wrapper classes
-    - [x] create sphere class
-    - [x] create normal material class
-    - [x] rewrite core/introOptix.cpp & core/introOptix.h
-    - [x] Debug
-  - [x] 3_3_2
-
-### Highest Priority ###
 - [ ] Write Project 3 code
-  - [ ] Part 4
+  - [x] Part 4
+    - [x] Convert PBRT materials
+    - [x] rewrite raygen.cu for Ray_Finish, seed
+    - [x] Add randomInUnitSphere
+    - [x] Change scene for lambertian
+    - [x] Fix sky miss bug
   - [ ] Part 5
   - [ ] Part 6
-- [ ] Start writing Project 2 text
-- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
+
+### Highest Priority ###
 - [ ] Pull together Project 1 code
+- [ ] Write Project 1 text
 
 ### Medium Priority ###
+- [ ] Start writing Project 2 text
 - [ ] Start writing Project 3 text
-- [ ] Write Project 1 text
+- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
+- [ ] turn raydata.h into raydata.cuh
+- [ ] push sphere.cu -b +- sqrt bugfix up the codebase
 - [ ] Project 4 code
   - [ ] Port existing code in
   - [ ] Instancing
@@ -33,11 +31,11 @@
   - [ ] Write Cornell Box scene code
 
 ### Low Priority ###
+- [ ] Write Project 4 text
 - [ ] fix *include "../[core|?]"* in projects
   - confirm why INCLUDE_DIRECTORIES( core ) is present
 - [ ] Remove add_executable - core/introOptix.h in CMakeLists.txt
 - [ ] Move *materials/* to *material/*
-- [ ] Write Project 4 text
 - [ ] Figure out if there is a way to try-catch optix::object exceptions 
 
 ### No Priority ###
