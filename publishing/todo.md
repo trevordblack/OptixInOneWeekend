@@ -9,8 +9,14 @@
       - [x] Add randomInUnitSphere
       - [x] Change scene for lambertian
       - [x] Fix sky miss bug
-    - [ ] Section2
+    - [x] Section2
+      - [x] Metal Material
+      - [x] Metal scene
+      - [x] debug
     - [ ] Section3
+      - [ ] Dielectric Material
+      - [ ] Dielectric scene
+      - [ ] debug
   - [ ] Part 5
     - [ ] Section1
     - [ ] Section2
