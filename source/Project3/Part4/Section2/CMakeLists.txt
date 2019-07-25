@@ -25,7 +25,7 @@ cuda_compile_and_embed(
   metal_material_ptx_c material/metalMaterial.cu
 )
 
-add_executable(IntroOptix_3_4_1
+add_executable(IntroOptix_3_4_2
   core/introOptix.h
   core/introOptix.cpp
   main.cpp
@@ -38,7 +38,7 @@ add_executable(IntroOptix_3_4_1
   ${metal_material_ptx_c}
 )
 
-target_link_libraries(IntroOptix_3_4_1
+target_link_libraries(IntroOptix_3_4_2
   ${optix_LIBRARY}
 )
 
