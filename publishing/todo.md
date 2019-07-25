@@ -14,12 +14,13 @@
       - [x] Metal scene
       - [x] debug
     - [ ] Section3
-      - [ ] Dielectric Material
-      - [ ] Dielectric scene
+      - [x] Dielectric Material
+      - [x] Dielectric scene
       - [ ] debug
   - [ ] Part 5
     - [ ] Section1
     - [ ] Section2
+  - [ ] Change Lambertian to random_on_unit_square
 
 ### Highest Priority ###
 - [ ] Pull together Project 1 code
