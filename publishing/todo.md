@@ -2,7 +2,7 @@
 
 ### Immediately ###
 - [ ] Write Project 3 code
-  - [] Part 4
+  - [x] Part 4
     - [x] Section1
       - [x] Convert PBRT materials
       - [x] rewrite raygen.cu for Ray_Finish, seed
@@ -13,12 +13,12 @@
       - [x] Metal Material
       - [x] Metal scene
       - [x] debug
-    - [ ] Section3
+    - [x] Section3
       - [x] Dielectric Material
       - [x] Dielectric scene
-      - [ ] debug
-  - [ ] Part 5
-    - [ ] Section1
+      - [x] debug
+  - [x] Part 5
+    - [x] Section1
     - [ ] Section2
   - [ ] Change Lambertian to random_on_unit_square
 

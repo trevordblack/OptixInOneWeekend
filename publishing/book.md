@@ -57,8 +57,8 @@
 - Part 5: Making a Scene
   - Section 1 Positionable Camera
     - Perspective
-    - Orthographic?
-    - Panoramic?
+    - Orthographic
+    - Environment
   - Section 2: Making a Scene
 
 ### Project 4: Cornell Box ###

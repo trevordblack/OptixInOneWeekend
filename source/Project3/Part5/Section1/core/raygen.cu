@@ -3,6 +3,7 @@
 
 #include "core/raydata.cuh"
 #include "random/random.cuh"
+#include "core/camera.cuh"
 
 using namespace optix;
 
@@ -89,17 +90,7 @@ RT_PROGRAM void rayGenProgram()
     {
         float u = float(theLaunchIndex.x+randf(seed)) / float(theLaunchDim.x);
         float v = float(theLaunchIndex.y+randf(seed)) / float(theLaunchDim.y);
-        float3 initialOrigin = origin;
-        float3 initialDirection = lowerLeftCorner + (u*horizontal) + (v*vertical) - origin;
-        
-        optix::Ray theRay = optix::make_Ray( 
-            initialOrigin,        // origin
-            initialDirection,     // direction
-            0,             // raytype
-            0.000001f,     // tmin (epsilon)
-            RT_DEFAULT_MAX // tmax
-        );
-
+        optix::Ray theRay = generateRay(u,v);
         float3 sampleRadiance = color(theRay, seed);
 
         // Remove NaNs
