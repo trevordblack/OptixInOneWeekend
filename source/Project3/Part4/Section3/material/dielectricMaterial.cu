@@ -17,50 +17,66 @@ rtDeclareVariable(HitRecord, hitRecord, attribute hitRecord, );
 // Material variables
 rtDeclareVariable(float, eta, , );
 
-inline __device__ float schlick(const float costheta, const float eta_2)
+inline __device__ float schlickDielectric(
+    const float costheta, const float eta_1, const float eta_2)
 {
-    float eta_1 = 1.0f;  // Assuming eta_1 is a vacuum
     float r0 = (eta_1-eta_2) / (eta_1+eta_2);
     r0 = r0*r0;
     return r0 + (1-r0)*pow((1-costheta), 5);
 }
 
+inline __device__ bool refract(const float3& v, const float3& n, 
+    const float eta_1, const float eta_2, float3& refracted)
+{
+    float3 uv = optix::normalize(v);
+    float dt = optix::dot(uv, n);
+    float discriminant = 1.0f; - (eta_1/eta_2)/(eta_1/eta_2)*(1-dt*dt);
+
+    if (discriminant > 0.0f)
+    {
+        refracted = (eta_1/eta_2)*(uv - dt*n) - sqrt(discriminant)*n;
+        return true;
+    }
+    return false;
+}
+
 RT_PROGRAM void closestHit()
 {
-    float3 uv = optix::normalize(theRay.direction);
-    float costheta = optix::dot(uv, hitRecord.normal);
-    float3 localNormal;
-    float dt, eta_iOverEta_t;
-    // Inside the object
-    if (costheta > 0.0f)
+    // Determine if inside or outside of object
+    float3 localNormal, unitDirection;
+    float costheta, eta_1, eta_2;
+    if (optix::dot(theRay.direction, hitRecord.normal) < 0.0f)
     {
-       localNormal = -hitRecord.normal;
-       dt = -costheta;
-       eta_iOverEta_t = eta;
-       costheta = eta * costheta;
+        // Outside the object
+        localNormal = hitRecord.normal;
+        unitDirection = optix::normalize(theRay.direction);
+        eta_1 = 1.0f;
+        eta_2 = eta;
+        costheta = optix::dot(-unitDirection, hitRecord.normal);
     }
-    // Outside the object
     else
     {
-        localNormal = hitRecord.normal;
-        dt = costheta;
-        eta_iOverEta_t = 1.0f / eta; // assuming eta_i is a vacuum
-        costheta = -costheta;
+        // Inside the object
+        localNormal = -hitRecord.normal;
+        unitDirection = optix::normalize(theRay.direction);
+        eta_1 = eta;
+        eta_2 = 1.0f;
+        costheta = optix::dot(unitDirection, hitRecord.normal);
+        costheta = sqrt(1.0f - eta_1*eta_1*(1.0f - costheta*costheta));
     }
-
-    float discriminant = 1.0f - eta_iOverEta_t*eta_iOverEta_t*(1-dt*dt);
+    
+    float3 refracted;
     float reflectProb;
-    if (discriminant > 0.0f)
-        reflectProb = schlick(costheta, eta);
+    if (refract(theRay.direction, localNormal, eta_1, eta_2, refracted))
+        reflectProb = schlickDielectric(costheta, eta_1, eta_2);
     else
         reflectProb = 1.0f;
 
     float3 scatterDirection;
     if(randf(thePrd.seed) < reflectProb)
-        scatterDirection = optix::reflect(uv, localNormal);
+        scatterDirection = optix::reflect(unitDirection, localNormal);
     else
-        scatterDirection = eta_iOverEta_t*(uv-localNormal*dt)
-            - localNormal*sqrt(discriminant);
+        scatterDirection = refracted; 
 
     thePrd.scatterEvent = Ray_Hit;
     thePrd.scatter = optix::make_Ray(
