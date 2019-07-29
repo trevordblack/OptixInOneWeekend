@@ -19,14 +19,15 @@
       - [x] debug
   - [x] Part 5
     - [x] Section1
-    - [ ] Section2
-  - [ ] Change Lambertian to random_on_unit_square
+    - [x] Section2
 
 ### Highest Priority ###
 - [ ] Pull together Project 1 code
 - [ ] Write Project 1 text
 - [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
 - [ ] push sphere.cu -b +- sqrt bugfix up the codebase
+- [ ] add gamma somewhere in Project 3
+- [ ] turn random.cuh into random.h
 
 ### Medium Priority ###
 - [ ] Start writing Project 2 text
@@ -48,6 +49,7 @@
   - confirm why INCLUDE_DIRECTORIES( core ) is present
 - [ ] Remove add_executable - core/introOptix.h in CMakeLists.txt
 - [ ] Figure out if there is a way to try-catch optix::object exceptions 
+- [ ] Turn NaNs Magenta instead of black
 
 ### No Priority ###
 - [ ] Book2
