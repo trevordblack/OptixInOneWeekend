@@ -16,11 +16,13 @@
 - Acknowledgements
 
 ### Project 1: Cuda ###
-- Cuda Hello World
-  - Cuda Linear Algebra
-  - Cuda solid color
-  - Cuda Color Gradient
-- Cuda Mandelbrot
+- Part 1: Gradient Color in Cuda
+  - Section 1: Gradient Color in C++
+  - Section 2: Cuda Hello World
+  - Section 3: Gradient Color in Cuda
+- Part 2: Adding a second dimension
+  - Section 1: Estimating Pi
+  - Section 2: Cuda Mandelbrot
 
 ### Project 2: Minimal Optix Example ###
 - Part 1: Optix Solid Color
