@@ -1,37 +1,22 @@
 # TODO #
 
 ### Immediately ###
-- [ ] Write Project 3 code
-  - [x] Part 4
-    - [x] Section1
-      - [x] Convert PBRT materials
-      - [x] rewrite raygen.cu for Ray_Finish, seed
-      - [x] Add randomInUnitSphere
-      - [x] Change scene for lambertian
-      - [x] Fix sky miss bug
-    - [x] Section2
-      - [x] Metal Material
-      - [x] Metal scene
-      - [x] debug
-    - [x] Section3
-      - [x] Dielectric Material
-      - [x] Dielectric scene
-      - [x] debug
-  - [x] Part 5
-    - [x] Section1
-    - [x] Section2
+- [ ] Pull together Project 1 code
+  - [x] Part1/Section1 Color gradient in C++
+  - [x] Part1/Section2 Cuda Hello World
+  - [ ] Part1/Section3 Cuda Color gradient
+  - [ ] Part2/Section1 Estimating Pi
+  - [ ] Part2/Section2 Cuda Mandelbrot
+- [ ] Update Readme so it doesn't specify why there is no Project1
+- [ ] push sphere.cu -b +- sqrt bugfix up the codebase
+- [ ] turn random.cuh into random.h
+- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
+- [ ] Push raydata.h into raydata.cuh fix up the codebase
+- [ ] Move *materials/* to *material/*
+- [ ] add gamma somewhere in Project 3
 
 ### Highest Priority ###
-- [ ] Pull together Project 1 code
 - [ ] Write Project 1 text
-- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
-- [ ] push sphere.cu -b +- sqrt bugfix up the codebase
-- [ ] add gamma somewhere in Project 3
-- [ ] turn random.cuh into random.h
-
-### Medium Priority ###
-- [ ] Start writing Project 2 text
-- [ ] Start writing Project 3 text
 - [ ] Project 4 code
   - [ ] Port existing code in
   - [ ] Instancing
@@ -40,8 +25,10 @@
   - [ ] Adding boxes
   - [ ] Lights
   - [ ] Write Cornell Box scene code
-- [ ] turn raydata.h into raydata.cuh
-- [ ] Move *materials/* to *material/*
+
+### Medium Priority ###
+- [ ] Start writing Project 2 text
+- [ ] Start writing Project 3 text
 
 ### Low Priority ###
 - [ ] Write Project 4 text
@@ -50,6 +37,7 @@
 - [ ] Remove add_executable - core/introOptix.h in CMakeLists.txt
 - [ ] Figure out if there is a way to try-catch optix::object exceptions 
 - [ ] Turn NaNs Magenta instead of black
+- [ ] Confirm Lambertian RandomOnUnitSphere looks dull
 
 ### No Priority ###
 - [ ] Book2
