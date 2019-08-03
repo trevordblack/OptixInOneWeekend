@@ -2,6 +2,7 @@
 ### Project 5: Putting it all together? ###
 - real3 and Real<N>
 - Motion Blur
+  - Optix7
 - Adding a bunch of Materials
 
 ### Project 6 ###
