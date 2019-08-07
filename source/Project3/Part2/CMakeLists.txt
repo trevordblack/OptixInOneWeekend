@@ -14,7 +14,7 @@ cuda_compile_and_embed(
 )
 
 cuda_compile_and_embed(
-  material_ptx_c materials/material.cu
+  material_ptx_c material/material.cu
 )
 
 add_executable(IntroOptix_3_2

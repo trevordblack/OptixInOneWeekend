@@ -12,7 +12,7 @@
 - [x] turn random.cuh into random.h
 - [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
 - [x] Push raydata.h into raydata.cuh fix up the codebase
-- [ ] Move *materials/* to *material/*
+- [x] Move *materials/* to *material/*
 
 ### Highest Priority ###
 - [ ] Write Project 1 text
