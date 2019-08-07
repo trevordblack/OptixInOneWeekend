@@ -18,7 +18,7 @@
 
 #include "core/ioCamera.h"
 
-#include "random/random.cuh"
+#include "random/random.h"
 
 class ioScene
 {

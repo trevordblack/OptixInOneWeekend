@@ -2,7 +2,7 @@
 #include <optixu/optixu_math_namespace.h>
 
 #include "core/raydata.cuh"
-#include "random/random.cuh"
+#include "random/random.h"
 
 using namespace optix;
 

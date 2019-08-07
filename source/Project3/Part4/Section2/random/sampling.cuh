@@ -5,7 +5,7 @@
 #include <optix_world.h>
 #include <optixu/optixu_math_namespace.h>
 
-#include "random/random.cuh"
+#include "random/random.h"
 
 inline __device__ float3 randomInUnitSphere(uint32_t& seed)
 {
