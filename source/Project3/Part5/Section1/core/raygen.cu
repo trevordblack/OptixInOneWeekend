@@ -100,6 +100,12 @@ RT_PROGRAM void rayGenProgram()
     }
     radiance /= numSamples;
 
+    radiance = make_float3(
+        sqrtf(radiance.x),
+        sqrtf(radiance.y),
+        sqrtf(radiance.z)
+    );
+
     sysOutputBuffer[theLaunchIndex] = radiance;
 }
 
