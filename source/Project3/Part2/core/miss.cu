@@ -1,7 +1,7 @@
 #include <optix.h>
 #include <optixu/optixu_math_namespace.h>
 
-#include "core/raydata.h"
+#include "core/raydata.cuh"
 
 using namespace optix;
 

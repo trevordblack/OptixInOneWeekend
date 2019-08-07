@@ -1,6 +1,6 @@
 #include <optix.h>
 
-#include "raydata.h"
+#include "raydata.cuh"
 
 // Ray state variables
 rtDeclareVariable(optix::Ray, ray, rtCurrentRay, );

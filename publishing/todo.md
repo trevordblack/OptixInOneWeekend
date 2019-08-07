@@ -9,9 +9,9 @@
   - [ ] Part2/Section2 Cuda Mandelbrot
 - [ ] add gamma somewhere in Project 3
 - [x] push sphere.cu -b +- sqrt bugfix up the codebase
-- [ ] turn random.cuh into random.h
+- [x] turn random.cuh into random.h
 - [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
-- [ ] Push raydata.h into raydata.cuh fix up the codebase
+- [x] Push raydata.h into raydata.cuh fix up the codebase
 - [ ] Move *materials/* to *material/*
 
 ### Highest Priority ###
