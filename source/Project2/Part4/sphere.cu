@@ -53,7 +53,7 @@ RT_PROGRAM void intersection(int pid)
         hitRecordNormal = (hitRecordP - center) / radius;
         rtReportIntersection(0);
     }
-    t = (b - sqrtf(discriminant)) / a;
+    t = (-b + sqrtf(discriminant)) / a;
     if (rtPotentialIntersection(t))
     {
         hitRecordP = ray.origin + t * ray.direction;

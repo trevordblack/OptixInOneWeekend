@@ -44,7 +44,7 @@ RT_PROGRAM void intersection(int pid)
     float d = (-b - sqrtf(discriminant)) / a;
     if (rtPotentialIntersection(d))
         rtReportIntersection(0);
-    d = (b - sqrtf(discriminant)) / a;
+    d = (-b + sqrtf(discriminant)) / a;
     if (rtPotentialIntersection(d))
         rtReportIntersection(0);
 }

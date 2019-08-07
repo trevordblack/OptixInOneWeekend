@@ -4,16 +4,15 @@
 - [ ] Pull together Project 1 code
   - [x] Part1/Section1 Color gradient in C++
   - [x] Part1/Section2 Cuda Hello World
-  - [ ] Part1/Section3 Cuda Color gradient
-  - [ ] Part2/Section1 Estimating Pi
+  - [x] Part1/Section3 Cuda Color gradient
+  - [x] Part2/Section1 Estimating Pi
   - [ ] Part2/Section2 Cuda Mandelbrot
-- [ ] Update Readme so it doesn't specify why there is no Project1
-- [ ] push sphere.cu -b +- sqrt bugfix up the codebase
+- [ ] add gamma somewhere in Project 3
+- [x] push sphere.cu -b +- sqrt bugfix up the codebase
 - [ ] turn random.cuh into random.h
 - [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
 - [ ] Push raydata.h into raydata.cuh fix up the codebase
 - [ ] Move *materials/* to *material/*
-- [ ] add gamma somewhere in Project 3
 
 ### Highest Priority ###
 - [ ] Write Project 1 text
@@ -25,6 +24,10 @@
   - [ ] Adding boxes
   - [ ] Lights
   - [ ] Write Cornell Box scene code
+- [ ] Update Readme 
+  - [ ] Why starts at Project2
+  - [ ] Now 75% done
+  - [ ] Change Header picture
 
 ### Medium Priority ###
 - [ ] Start writing Project 2 text
