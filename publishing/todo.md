@@ -2,17 +2,12 @@
 
 ### Immediately ###
 - [ ] Pull together Project 1 code
-  - [x] Part1/Section1 Color gradient in C++
-  - [x] Part1/Section2 Cuda Hello World
-  - [x] Part1/Section3 Cuda Color gradient
-  - [x] Part2/Section1 Estimating Pi
   - [ ] Part2/Section2 Cuda Mandelbrot
 - [ ] add gamma somewhere in Project 3
-- [x] push sphere.cu -b +- sqrt bugfix up the codebase
-- [x] turn random.cuh into random.h
-- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
-- [x] Push raydata.h into raydata.cuh fix up the codebase
-- [x] Move *materials/* to *material/*
+- [ ] Update Readme 
+  - [ ] Why starts at Project2
+  - [ ] Now 75% done
+  - [ ] Change Header picture
 
 ### Highest Priority ###
 - [ ] Write Project 1 text
@@ -24,10 +19,9 @@
   - [ ] Adding boxes
   - [ ] Lights
   - [ ] Write Cornell Box scene code
-- [ ] Update Readme 
-  - [ ] Why starts at Project2
-  - [ ] Now 75% done
-  - [ ] Change Header picture
+- [ ] Turn raygen.cu (*u*,*v*) coords into (*s*,*t*) coords
+  - [x] 3/5/*
+  - [ ] Everywhere else
 
 ### Medium Priority ###
 - [ ] Start writing Project 2 text
@@ -41,6 +35,7 @@
 - [ ] Figure out if there is a way to try-catch optix::object exceptions 
 - [ ] Turn NaNs Magenta instead of black
 - [ ] Confirm Lambertian RandomOnUnitSphere looks dull
+- [ ] Fix Cuda compile bug that throws a linker error when multiple projects are built
 
 ### No Priority ###
 - [ ] Book2

@@ -88,9 +88,9 @@ RT_PROGRAM void rayGenProgram()
     float3 radiance = make_float3(0.0f, 0.0f, 0.0f);
     for (int n = 0; n < numSamples; n++)
     {
-        float u = float(theLaunchIndex.x+randf(seed)) / float(theLaunchDim.x);
-        float v = float(theLaunchIndex.y+randf(seed)) / float(theLaunchDim.y);
-        optix::Ray theRay = generateRay(u,v);
+        float s = float(theLaunchIndex.x+randf(seed)) / float(theLaunchDim.x);
+        float t = float(theLaunchIndex.y+randf(seed)) / float(theLaunchDim.y);
+        optix::Ray theRay = generateRay(s,t);
         float3 sampleRadiance = color(theRay, seed);
 
         // Remove NaNs
