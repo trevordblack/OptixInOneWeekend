@@ -2,13 +2,10 @@
 
 ### Immediately ###
 - [ ] Project1/Part2/Section2 Cuda Mandelbrot
-- [x] add gamma somewhere in Project 3
-  - [x] Put somewhere (3/4/3)
-  - [x] Propogate
 - [ ] Update Readme 
   - [ ] Why starts at Project2
   - [ ] Now 75% done
-  - [ ] Change Header picture
+  - [x] Change Header picture
 
 ### Highest Priority ###
 - [ ] Write Project 1 text
@@ -22,11 +19,11 @@
   - [ ] Write Cornell Box scene code
 
 ### Medium Priority ###
-- [ ] Start writing Project 2 text
-- [ ] Start writing Project 3 text
+- [ ] Write Project 2 text
+- [ ] Write Project 3 text
+- [ ] Write Project 4 text
 
 ### Low Priority ###
-- [ ] Write Project 4 text
 - [ ] fix *include "../[core|?]"* in projects
   - confirm why INCLUDE_DIRECTORIES( core ) is present
 - [ ] Remove add_executable - core/introOptix.h in CMakeLists.txt
