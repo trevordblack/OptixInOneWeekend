@@ -26,14 +26,6 @@ The following tools will be used:
 - Nvidia OptiX SDK
 - CMake (for builds)
 
-## Why does it start at Project 2? ##
-
-It doesn't!
-
-At present plan, Project 1 is a Cuda introduction. I explicitly do *not* expect cuda experience for the user. However, there exists adequate cuda introductions on the web already.
-
-So, in the near term, Project 1 and Cuda is of lower priority.
-
 ## Repo Organization ##
 
 LICENSE
@@ -76,4 +68,4 @@ You can also contact me directly at trevordavidblack AT gmail DOT com
 
 ## Work Left to Complete ##
 
-Like 85%
+The text documents for Project 1 - 4

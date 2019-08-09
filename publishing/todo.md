@@ -2,9 +2,9 @@
 
 ### Immediately ###
 - [ ] Project1/Part2/Section2 Cuda Mandelbrot
-- [ ] Update Readme 
-  - [ ] Why starts at Project2
-  - [ ] Now 75% done
+- [x] Update Readme 
+  - [x] Why starts at Project2
+  - [x] Now 75% done
   - [x] Change Header picture
 
 ### Highest Priority ###
