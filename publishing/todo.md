@@ -1,11 +1,7 @@
 # TODO #
 
 ### Immediately ###
-- [ ] Project1/Part2/Section2 Cuda Mandelbrot
-- [x] Update Readme 
-  - [x] Why starts at Project2
-  - [x] Now 75% done
-  - [x] Change Header picture
+- [x] Project1/Part2/Section2 Cuda Mandelbrot
 
 ### Highest Priority ###
 - [ ] Write Project 1 text
