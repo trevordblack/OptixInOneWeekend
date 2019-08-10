@@ -1,10 +1,7 @@
 # TODO #
 
 ### Immediately ###
-- [x] Project1/Part2/Section2 Cuda Mandelbrot
-
-### Highest Priority ###
-- [ ] Write Project 1 text
+- [ ] Organize Project 4 organization
 - [ ] Project 4 code
   - [ ] Port existing code in
   - [ ] Instancing
@@ -14,9 +11,12 @@
   - [ ] Lights
   - [ ] Write Cornell Box scene code
 
-### Medium Priority ###
+### Highest Priority ###
+- [ ] Write Project 1 text
 - [ ] Write Project 2 text
 - [ ] Write Project 3 text
+
+### Medium Priority ###
 - [ ] Write Project 4 text
 
 ### Low Priority ###
