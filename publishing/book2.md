@@ -1,4 +1,18 @@
 ## Book 2 ##
+### Project 4: Cornell Box ###
+- Adding Quads
+- Adding Textures
+  - uv
+  - solid textures
+- Adding Images
+  - printing out with stb
+- Instancing
+- Adding Boxes
+- Lights
+  - Turn the sky miss into an ambient light texture
+  - Light class?
+- Cornell Box
+
 ### Project 5: Putting it all together? ###
 - real3 and Real<N>
 - Motion Blur

@@ -63,20 +63,6 @@
     - Environment
   - Section 2: Making a Scene
 
-### Project 4: Cornell Box ###
-- Adding Quads
-- Adding Textures
-  - uv
-  - solid textures
-- Adding Images
-  - printing out with stb
-- Instancing
-- Adding Boxes
-- Lights
-  - Turn the sky miss into an ambient light texture
-  - Light class?
-- Cornell Box
-
 ### Appendices ###
 - THESE MAY ALL JUST BELONG IN THE BODY OF THE TEXT!!!
 - CMakeLists.txt explanation
