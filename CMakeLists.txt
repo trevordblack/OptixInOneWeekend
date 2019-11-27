@@ -16,7 +16,7 @@
 
 # Modified 2019 Trevor David Black
 
-PROJECT(IntroOptix)
+PROJECT(OptixInAWeekend)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
@@ -47,27 +47,4 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 
 
 # Project Code from here forward
-
-# Project 1
-#ADD_SUBDIRECTORY(Project1/Part1/Section1)
-#ADD_SUBDIRECTORY(Project1/Part1/Section2)
-#ADD_SUBDIRECTORY(Project1/Part1/Section3)
-#ADD_SUBDIRECTORY(Project1/Part2/Section1)
-#ADD_SUBDIRECTORY(Project1/Part2/Section2)
-# Project 2
-#ADD_SUBDIRECTORY(Project2/Part1)
-#ADD_SUBDIRECTORY(Project2/Part2/Section1)
-#ADD_SUBDIRECTORY(Project2/Part2/Section2)
-#ADD_SUBDIRECTORY(Project2/Part3)
-#ADD_SUBDIRECTORY(Project2/Part4)
-# Project 3
-#ADD_SUBDIRECTORY(Project3/Part1/Section1)
-#ADD_SUBDIRECTORY(Project3/Part1/Section2)
-#ADD_SUBDIRECTORY(Project3/Part2)
-#ADD_SUBDIRECTORY(Project3/Part3/Section1)
-#ADD_SUBDIRECTORY(Project3/Part3/Section2)
-#ADD_SUBDIRECTORY(Project3/Part4/Section1)
-#ADD_SUBDIRECTORY(Project3/Part4/Section2)
-#ADD_SUBDIRECTORY(Project3/Part4/Section3)
-#ADD_SUBDIRECTORY(Project3/Part5/Section1)
-ADD_SUBDIRECTORY(Project3/Part5/Section2)
+ADD_SUBDIRECTORY(src)
