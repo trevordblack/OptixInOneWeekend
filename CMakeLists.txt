@@ -20,6 +20,11 @@ PROJECT(OptixInAWeekend)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
+set(OptiX_INSTALL_DIR
+  "/home/lucifer/optix/NVIDIA-OptiX-SDK-6.5.0-linux64/"
+  CACHE PATH "Path to OptiX installed location.")
+#set(OptiX_INSTALL_DIR "/home/lucifer/optix/NVIDIA-OptiX-SDK-6.5.0-linux64/")
+
 INCLUDE(cmake/configure_optix.cmake)
 
 if(NOT SET_UP_CONFIGURATIONS_DONE)
