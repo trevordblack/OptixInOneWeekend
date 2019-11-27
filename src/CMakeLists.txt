@@ -29,7 +29,7 @@ cuda_compile_and_embed(
   dielectric_material_ptx_c material/dielectricMaterial.cu
 )
 
-add_executable(IntroOptix_3_5_2
+add_executable(optix_in_a_weekend
   core/introOptix.h
   core/introOptix.cpp
   main.cpp
@@ -43,7 +43,7 @@ add_executable(IntroOptix_3_5_2
   ${dielectric_material_ptx_c}
 )
 
-target_link_libraries(IntroOptix_3_5_2
+target_link_libraries(optix_in_a_weekend
   ${optix_LIBRARY}
 )
 
