@@ -1,19 +1,9 @@
 # An Introduction to GPU RT with OptiX #
 
-## Book 1 ##
 
-### Readme ###
-- What this book is
-- Picture for end of Project 2
-- Who the book is for
-- Expected experience
-- Tools used in this book
-- Why does it start at Project2?
-- Basic Table of Contents
-- Repo folder organization
-- Contributing
-- Work left to finish
-- Acknowledgements
+
+
+
 
 ### Project 1: Cuda ###
 - Part 1: Gradient Color in Cuda
@@ -64,7 +54,6 @@
   - Section 2: Making a Scene
 
 ### Appendices ###
-- THESE MAY ALL JUST BELONG IN THE BODY OF THE TEXT!!!
 - CMakeLists.txt explanation
 - Random Number Generators
 - Differences between Acceleration Structures

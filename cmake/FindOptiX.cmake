@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2018 NVIDIA CORPORATION. All rights reserved.
+# Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -29,28 +29,20 @@
 # Locate the OptiX distribution.  Search relative to the SDK first, then look in the system.
 
 # Our initial guess will be within the SDK.
+set(OptiX_INSTALL_DIR "${CMAKE_SOURCE_DIR}/../" CACHE PATH "Path to OptiX installed location.")
 
-# @TODO remove this for Win
-if (WIN32)
-#		set(OptiX_INSTALL_DIR "C:/ProgramData/NVIDIA Corporation/OptiX SDK 5.1.0" CACHE PATH "Path to OptiX installed location.")
-	find_path(searched_OptiX_INSTALL_DIR
-		NAME include/optix.h
-		PATHS
-		"C:/ProgramData/NVIDIA Corporation/OptiX SDK 5.1.1"
-		"C:/ProgramData/NVIDIA Corporation/OptiX SDK 5.1.0"
-		"C:/ProgramData/NVIDIA Corporation/OptiX SDK 5.0.1"
-		"C:/ProgramData/NVIDIA Corporation/OptiX SDK 5.0.0"
-		"C:/ProgramData/NVIDIA Corporation/OptiX SDK *"
-	)
-	mark_as_advanced(searched_OptiX_INSTALL_DIR)
-  set(OptiX_INSTALL_DIR ${searched_OptiX_INSTALL_DIR} CACHE PATH "Path to OptiX installed location.")
+# The distribution contains only 64 bit libraries.  Error when we have been mis-configured.
+if(NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
+  if(WIN32)
+    message(SEND_ERROR "Make sure when selecting the generator, you select one with Win64 or x64.")
+  endif()
+  message(FATAL_ERROR "OptiX only supports builds configured for 64 bits.")
 endif()
 
-# The distribution contains both 32 and 64 bit libraries.  Adjust the library
 # search path based on the bit-ness of the build.  (i.e. 64: bin64, lib64; 32:
 # bin, lib).  Note that on Mac, the OptiX library is a universal binary, so we
 # only need to look in lib and not lib64 for 64 bit builds.
-if(CMAKE_SIZEOF_VOID_P EQUAL 8 AND NOT APPLE)
+if(NOT APPLE)
   set(bit_dest "64")
 else()
   set(bit_dest "")
@@ -77,9 +69,9 @@ macro(OPTIX_find_api_library name version)
   endif()
 endmacro()
 
-OPTIX_find_api_library(optix 65)
-OPTIX_find_api_library(optixu 1)
-OPTIX_find_api_library(optix_prime 1)
+OPTIX_find_api_library(optix 6.5.0)
+OPTIX_find_api_library(optixu 6.5.0)
+OPTIX_find_api_library(optix_prime 6.5.0)
 
 # Include
 find_path(OptiX_INCLUDE
@@ -92,9 +84,12 @@ find_path(OptiX_INCLUDE
   )
 
 # Check to make sure we found what we were looking for
-function(OptiX_report_error error_message required)
+function(OptiX_report_error error_message required component )
+  if(DEFINED OptiX_FIND_REQUIRED_${component} AND NOT OptiX_FIND_REQUIRED_${component})
+    set(required FALSE)
+  endif()
   if(OptiX_FIND_REQUIRED AND required)
-    message(FATAL_ERROR "${error_message}")
+    message(FATAL_ERROR "${error_message}  Please locate before proceeding.")
   else()
     if(NOT OptiX_FIND_QUIETLY)
       message(STATUS "${error_message}")
@@ -103,13 +98,13 @@ function(OptiX_report_error error_message required)
 endfunction()
 
 if(NOT optix_LIBRARY)
-  OptiX_report_error("optix library not found.  Please locate before proceeding." TRUE)
+  OptiX_report_error("optix library not found." TRUE libraries )
 endif()
 if(NOT OptiX_INCLUDE)
-  OptiX_report_error("OptiX headers (optix.h and friends) not found.  Please locate before proceeding." TRUE)
+  OptiX_report_error("OptiX headers (optix.h and friends) not found." TRUE headers )
 endif()
 if(NOT optix_prime_LIBRARY)
-  OptiX_report_error("optix Prime library not found.  Please locate before proceeding." FALSE)
+  OptiX_report_error("optix Prime library not found." TRUE libraries )
 endif()
 
 # Macro for setting up dummy targets

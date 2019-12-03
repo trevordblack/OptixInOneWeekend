@@ -47,10 +47,10 @@ target_link_libraries(optix_in_a_weekend
   ${optix_LIBRARY}
 )
 
-enable_language(CUDA)
-add_executable(color
-  color.cu
-)
-add_executable(mandelbrot
-  mandelbrot.cu
-)
+#enable_language(CUDA)
+#add_executable(color
+#  color.cu
+#)
+#add_executable(mandelbrot
+#  mandelbrot.cu
+#)
