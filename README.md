@@ -1,10 +1,11 @@
-# An Introduction to GPU Ray Tracing with OptiX #
+# OptiX In One Weekend
 
 ![](images/readme_header2.png)
 
-## What is this? ##
+## What is this?
 
-This is *An Introduction to GPU Ray Tracing with Optix*.\
+This is *OptiX In One Weekend*.
+
 An Introductory text to learning the Nvidia OptiX Ray tracing SDK.
 
 Within the body of the SDK there are a large number of holistic programs that encapsulate an entire
@@ -14,7 +15,7 @@ publically.
 This text is an attempt to remedy that. All projects will be built incremently, one subsection at a
 time. There should never be more than 1 thing to be learn at a time.
 
-## Expected Experience ##
+## Expected Experience
 
 I expect the minimum from you:
 - Some experience in c++
@@ -22,7 +23,7 @@ I expect the minimum from you:
 As tools and ideas are introduced, their understanding will be explained. If there is an idea or
 implementation detail that is not fully explained, that is a **bug** and should be fixed.
 
-## Tools Used by OIOW ##
+## Tools Used by OIOW
 
 The following tools will be used:
 - A C++ compiler (Clang, GCC, VS, ...)
@@ -30,7 +31,7 @@ The following tools will be used:
 - Nvidia OptiX SDK
 - CMake (for builds)
 
-## Acknowledgements ##
+## Acknowledgements
 
 - Peter Shirley
 - Ingo Wald
@@ -38,7 +39,7 @@ The following tools will be used:
 - Steve Hollasch
 - Morgan McGuire
 
-## Contributing ##
+## Contributing
 
 If you find a problem with the project, whether that is in the source or in the text, I politely
 request that you create an issue. Rather than a pull request.
