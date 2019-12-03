@@ -18,6 +18,44 @@ Overview
 Cuda
 ====================================================================================================
 
+To start off, we will begin with a very brief introduction to CUDA. If you are already competent in
+CUDA then you can comfortably skip this chapter and jump to chapter [Minimal OptiX Example].
+However, you may not wish to do so because many of the ideas presented in this chapter will be
+repeated and explored more fully in later chapters.
+
+To start off with, we will need two tools.
+
+The first is a dedicated c++ compiler. If you have a machine running a copy of MacOSX from the last
+half-decade or so, your machine will have shipped with clang. If your machine is runnning linux it
+will likely have shipped with gcc or clang. If your linux machine didn't ship with a c++ compiler,
+then it's likely that you know how to get one, and so I won't be covering that here. Unfortuneatly,
+Windows hasn't shipped with a native c++ compiler in a long time. If your machine is running Windows
+then you'll need to download a copy of Microsoft's Visual Studio (MSVC). At present, this project
+does not include any feature specific to any particular year of MSVC, just get the most recent
+public release that you can get freely. Add to $PATH upon installation.
+
+
+Confirm that your c++ compiler is installed and functioning correctly:
+
+On clang:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
+    $ clang --version
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [Listing [clang-version]: Checking clang c++ is installed and working]
+
+On gcc:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
+    $ gcc --version
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [Listing [gcc-version]: Checking gcc c++ is installed and working]
+
+on MSVC:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
+    c:\Users\Trevor>cl
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [Listing [msvc-version]: Checking msvc c++ is installed and working]
+
+
 
 Getting Up to Speed with CUDA
 ----------------------------------------------------------------------------------------------------
@@ -27,7 +65,7 @@ Adding a Second Dimension
 ----------------------------------------------------------------------------------------------------
 
 
-Minimal Optix Example
+Minimal OptiX Example
 ====================================================================================================
 
 
@@ -44,7 +82,7 @@ Adding Spheres to the Scene
 ----------------------------------------------------------------------------------------------------
 
 
-A Minimal Optix Example
+A Minimal OptiX Example
 ----------------------------------------------------------------------------------------------------
 
 
