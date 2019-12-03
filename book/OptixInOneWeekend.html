@@ -55,7 +55,18 @@ on MSVC:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     [Listing [msvc-version]: Checking msvc c++ is installed and working]
 
+The second tool we need is CMake. CMake is a build tool that is compiler and operating system
+agnostic. We can safely create build files in cmake and migrate the source and build files to a
+separate operating system. It's the number one tool for making this book possible across all three
+operating systems. It's entirely reasonable to be unfamiliar with CMake, or to only have a passing
+familiarity with the tool. However, OptiX ships with CMake as the primary build tool and contains
+many CMake scripts to simplify building your projects. We'll be building up our CMake scripts as our
+projects increase in complexity, but there are many CMake calls that will not be explained in full.
+Much of the following will be self-evident or will be explained if it's understanding is needed. You
+are encouraged to explore CMake in your other projects.
 
+CMake can be downloaded with your package manager (Linux) or through the website at
+https://cmake.org/download/
 
 Getting Up to Speed with CUDA
 ----------------------------------------------------------------------------------------------------
@@ -71,7 +82,6 @@ Minimal OptiX Example
 
 Writing a Solid Color in OptiX
 ----------------------------------------------------------------------------------------------------
-
 
 
 Blue Sky Miss Program
